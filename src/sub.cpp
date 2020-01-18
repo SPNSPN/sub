@@ -1,9 +1,10 @@
+#include <iostream>
 #include <ros/ros.h>
 #include <std_msgs/String.h>
 
 void callback (const std_msgs::String::ConstPtr &msg)
 {
-	ROS_INFO("subscribe: %s", msg->data.c_str());
+	ROS_INFO("subscribe: %s\n", msg->data.c_str());
 }
 
 
